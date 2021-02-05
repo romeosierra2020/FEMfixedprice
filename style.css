@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-fix: hsl(179, 62%, 53%);
+    --clr-primary1: hsl(179, 62%, 43%);
+    --clr-primary2: hsl(71, 73%, 54%); /*h2 and sign up button */
+    --clr-secondary1: hsl(204, 43%, 93%);
+    --clr-secondary2: hsl(218, 22%, 67%); /*intro text */
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+body {
+    background-color: var(--clr-secondary1);
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--clr-primary1);
+}
+
+h2 {
+    padding: 2rem 0rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--clr-primary2);
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--clr-secondary1);
+    padding-bottom: 2rem;
+}
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: white;
+}
+
+main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.upper-section {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    width: 20rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.intro-text {
+    color: var(--clr-secondary2);
+}
+
+
+.middle-section {
+    background-color: var(--clr-primary1);
+    padding: 2rem 1.5rem;
+    width: 20rem;
+    color: white;
+}
+
+button {
+    width: 16rem;
+    height: 3rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+    background-color: var(--clr-primary2);
+    border-style: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.price-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.price-text > span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.lower-section {
+    background-color: var(--clr-fix);
+    padding: 2rem 1.5rem;
+    width: 20rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;    
+}
+
