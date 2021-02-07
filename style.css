@@ -17,6 +17,8 @@
 html {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -54,6 +56,8 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
+    max-width: 950px;
+    margin-inline: auto;
 }
 
 .upper-section {
@@ -93,12 +97,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: left;
+    color: var(--clr-fix);
+    font-size: 1rem;
 
 }
 
 .price-text > span {
     font-size: 2rem;
     font-weight: 700;
+    color: white;
 }
 
 .lower-section {
@@ -106,6 +113,41 @@ button {
     padding: 2rem 1.5rem;
     width: 20rem;
     border-bottom-left-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;    
+    border-bottom-right-radius: 0.3rem; 
 }
+
+.lower-section > p {
+    color: var(--clr-primary2);
+}
+
+@media (min-width: 975px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .upper-section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: auto;
+    }
+    .middle-section {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 100%;
+        border-bottom-left-radius: 0.3rem;
+    }
+    .lower-section {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 100%;
+        border-bottom-left-radius: 0;
+    }
+
+} 
 
